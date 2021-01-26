@@ -1,0 +1,23 @@
+{
+  "name": "max-char",
+  "version": "1.0.0",
+  "description": "Given a string, return the character that is most used in the string",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaitlynSalemi/max-char.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaitlynSalemi/max-char/issues"
+  },
+  "homepage": "https://github.com/KaitlynSalemi/max-char#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
