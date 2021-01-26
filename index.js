@@ -12,20 +12,27 @@
 
 function maxChar(str) {
   const characterCount = {};
-  let max = 0;
-  let maxChar = '';
+  let highestNumRep = 0;
+  let mostUsedChar = '';
 
   for (let char of str) {
     characterCount[char] ? characterCount[char]++ : (characterCount[char] = 1);
   }
+  // maxChar('hello')
+  // characterCount = {
+  //   'h': 1,
+  //   'e': 1,
+  //   'l': 2,
+  //   'o': 1
+  // }
 
-  for (let char in characterCount) {
-    if (characterCount[char] > max) {
-      max = characterCount[char];
-      maxChar = char;
+  for (let key in characterCount) {
+    if (characterCount[key] > highestNumRep) {
+      highestNumRep = characterCount[key];
+      mostUsedChar = key;
     }
   }
-  return maxChar;
+  return mostUsedChar;
 }
 
 module.exports = maxChar;
